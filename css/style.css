@@ -1,0 +1,941 @@
+/*Fonts*/
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold-webfont.eot');
+    src: url('../fonts/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-bold-webfont.woff') format('woff'),
+         url('../fonts/raleway-bold-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-bold-webfont.svg#ralewaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../fonts/raleway-light-webfont.eot');
+    src: url('../fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-light-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-light-webfont.woff') format('woff'),
+         url('../fonts/raleway-light-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular-webfont.eot');
+    src: url('../fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-regular-webfont.woff') format('woff'),
+         url('../fonts/raleway-regular-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('../fonts/raleway-semibold-webfont.eot');
+    src: url('../fonts/raleway-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-semibold-webfont.woff') format('woff'),
+         url('../fonts/raleway-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-semibold-webfont.svg#ralewaysemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/opensans-light-webfont.eot');
+    src: url('../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff'),
+         url('../fonts/opensans-light-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.eot');
+    src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/opensans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../fonts/opensans-semibold-webfont.eot');
+    src: url('../fonts/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-semibold-webfont.woff') format('woff'),
+         url('../fonts/opensans-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../fonts/montserrat-bold-webfont.eot');
+    src: url('../fonts/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-bold-webfont.woff') format('woff'),
+         url('../fonts/montserrat-bold-webfont.ttf') format('truetype'),
+         url('../fonts/montserrat-bold-webfont.svg#montserratbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url('../fonts/opensans-extrabold-webfont.eot');
+    src: url('../fonts/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-extrabold-webfont.woff') format('woff'),
+         url('../fonts/opensans-extrabold-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-extrabold-webfont.svg#open_sansextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Fonts End*/
+
+/*General*/
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 19px;
+    line-height: 31px;
+    font-weight: 400;
+    text-align: center;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container-fluid,
+.row {
+    padding: 0;
+    margin: 0;
+}
+hr {
+    margin: 0;
+}
+.content-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.content-width:after,
+.content-width:before {
+    clear: both;
+    display: table;
+    content: " ";
+}
+.main-heading {
+    font-size: 50px;
+    line-height: 73px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+.main-heading-color {
+    color: rgb(11, 59, 83);
+}
+.inner {
+    padding: 0;
+}
+.retreat-left-right {
+    padding-left: 30px;
+    padding-right: 30px
+}
+.retreat-top-bottom {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.paragraph-italic {
+    font-size: 23px;
+    line-height: 32px;
+    font-family: 'ralewaylight', sans-serif;
+    font-style: italic;
+    margin: 0;
+    padding-bottom: 30px;
+}
+.paragraph {
+    margin: 0;
+    font-family: 'ralewayregular', sans-serif;
+    padding-bottom: 30px;
+}
+.line {
+    height: 30px;
+    position: relative;
+}
+.line img {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+/*General End*/
+/*Header*/
+.header {
+    padding: 22px 0;
+    text-align: left;
+}
+.header-left-part img {
+    margin: -12px 10px 0 1px;
+}
+.header-left-part img:nth-child(2) {
+    margin-top: 0px;
+}
+.header-left-part,
+.header-center-part {
+    float: left;
+}
+.header-center-part {
+    line-height: 20px;
+}
+.tel a {
+    color: rgb(3, 30, 44);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 25px;
+    padding: 0px;
+}
+.mail a {
+    color: rgb(3, 30, 44);
+    font-family: 'ralewayregular', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 10px;
+    padding: 0px;
+}
+.header-right-part {
+    float: right;
+    padding: 6px 0 0 0;
+}
+.btn-warning {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(246, 176, 12);
+    border-radius: 0;
+    width: 93px;
+    height: 36px;
+    font-family: 'open_sanssemibold';
+    font-weight: 600;
+    color: black;
+    font-size: 17px;
+    line-height: 36px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.btn-warning:hover {
+    border: 1px solid rgb(246, 176, 12);
+    color: rgb(11, 59, 83);
+    background-color: rgb(246, 176, 12);
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+}
+.btn-link {
+    padding: 0;
+    margin: 0 0 0 3px;
+    border: 1px solid black;
+    width: 86px;
+    height: 36px;
+    font-family: 'open_sanssemibold';
+    font-weight: 600;
+    color: black;
+    font-size: 17px;
+    line-height: 36px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.btn-link:hover {
+    border: 1px solid rgb(11, 59, 83);
+    text-decoration: none;
+    color: rgb(11, 59, 83);
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+}
+hr {
+    border: 0.5px solid rgb(207, 216, 221);
+}
+
+/*Navigation*/
+.navbar {
+    margin-bottom: 0;
+    background-color: #ffffff;
+}
+.left-part {
+    font-family: 'open_sanslight', sans-serif;
+    font-size: 15px;
+    line-height: 63px;
+    font-weight: 900;
+    float: left;
+    vertical-align: middle;
+    padding: 0;
+}
+.left-part .navbar-nav li a {
+    padding: 20px 15px 20px 2px;
+    color: rgb(3, 30, 44);
+}
+.left-part .navbar-nav li a:hover {
+    color: rgb(255, 150, 0);
+} 
+.left-part .navbar-nav li a:after {
+    background-color: rgb(255, 150, 0);
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.left-part .navbar-nav li a:hover:after,
+.left-part .navbar-nav li a:focus:after {
+    width: 100%;
+}
+.left-part .navbar-nav li a:visited {
+    color: #4c6bde;
+}
+.right-part {
+    padding: 0;
+}
+.right-part p {
+    color: rgb(255, 150, 0);
+    font-weight: bold;
+    text-align: right;
+    font-size: 14px;
+    line-height: 60px;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+/*Direct Response TV */
+.content-block-path1 {
+    height: auto;
+    background-image: url(../image/block3_fone.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+.content-block-path1 .retreat-top-bottom {
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+/*We Only Earn Commission */
+
+
+/*The Process */
+.content-block-path3 {
+    background-image: url(../image/block5_fone.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+.block-left {
+    overflow: hidden;
+    padding: 0px 0px 11px 0px;
+}
+.block-left img {
+    float:left;
+}
+.block-left .number {
+    font-family: 'open_sansextrabold';
+    font-size: 83px;
+    line-height: 73px;
+    color: rgb(62, 106, 124);
+    font-weight: bolder;
+}
+.block-left .title {
+    font-family: 'ralewaybold';
+    font-size: 58px;
+    line-height: 73px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.block-left .path3-header {
+    text-align: left;
+    padding-left: 285px;
+    padding-top: 11px;
+}
+.block-left span img {
+    position: relative;
+    top: 9px;
+    left: -3px;
+}
+.block-left p {
+    padding: 27px 50px 0 298px;
+    margin: 0;
+    text-align: left;
+}
+.block-right {
+    overflow: hidden;
+    padding: 0px 0 9px 0px;  
+}
+.block-right img {
+    float:right;
+}
+.block-right .number {
+    font-family: 'open_sansextrabold';
+    font-size: 83px;
+    line-height: 73px;
+    color: rgb(62, 106, 124);
+    font-weight: bolder;
+}
+.block-right .title {
+    font-family: 'ralewaybold';
+    font-size: 58px;
+    line-height: 73px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.block-right .path3-header {
+    text-align: right;
+    padding-right: 295px;
+    padding-top: 11px;
+}
+.block-right span img {
+    position: relative;
+    top: 10px;
+    left: 3px;
+}
+.block-right p {
+    padding: 27px 300px 0 50px;
+    margin: 0;
+    text-align: left;
+}
+/*Call Centers */
+
+/*The Call Tracking Platform */
+.content-block-path5 {
+    background-image: url(../image/block7_fone.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+.button .btn-warning {
+    background-color: rgb(240, 162, 0);
+    width: 593px;
+    height: 75px;
+    color: white;
+    font-family: 'ralewaybold';
+    font-size: 27px;
+    line-height: 75px;
+    font-weight: bold;
+}
+.button .btn-warning:hover{
+    color: rgb(11, 59, 83);
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+}
+.break {
+    display: none;
+}
+
+/*The Commercials */
+.content-block-path6 {
+    background-image: url(../image/block8_fone.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.video-col video {
+    width: 361px;
+    height: 248px;
+    padding-bottom: 10px;
+}
+/*Map and Lets get it on */
+#map {
+    height: 500px;
+}
+.content-block-path7 .content-width {
+    margin: 0;
+    padding: 0;
+    max-width: none;
+}
+.content-block-path7 .left-part-1 {
+    padding: 0;
+}
+.content-block-path7 .right-part-1 {
+    text-align: left;
+}
+.content-block-path7 .line img {
+    position: inherit;
+    text-align: left;
+}
+.content-block-path7 .right-part-1 .address {
+    font-size: 24px;
+    line-height: 33px;
+    padding: 15px 0;
+}
+.content-block-path7 .right-part-1 .call {
+    font-family: 'montserratbold', sans-serif;
+    font-size: 26px;
+    line-height: 25px;
+    color: rgb(67, 67, 67);
+    padding: 30px 5px 25px 5px;
+}
+.content-block-path7 .right-part-1 a {
+    font-family: 'montserratbold', sans-serif;
+    font-size: 49px;
+    line-height: 25px;
+    color: rgb(11, 59, 83);
+    padding: 0 5px;
+}
+/*Footer */
+.footer .retreat-top-bottom {
+    padding: 20px 0;
+}
+.footer {
+    background-color: rgb(3, 19, 30);
+    text-align: center;
+    color: rgb(62, 106, 124);
+    font-family: 'OpenSans', sans-serif;
+}
+.footer a {
+    color: rgb(62, 106, 124);
+}
+
+
+
+/*Responsive Rules*/
+
+@media (max-width: 1199px) /*1199-991*/  {
+    /*Body*/
+    .retreat-left-right {
+        padding-left: 25px;
+        padding-right: 25px
+    }
+    .retreat-top-bottom {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    /*End Body*/
+    /*Navigation*/
+    .right-part p {
+        float: left;
+    }
+    .left-part .navbar-nav li a {
+        padding: 20px 25px 0px 2px;
+    }
+    /*End Navigation*/
+    /*The Process */
+    .content-block-path3 .block-left span img,
+    .content-block-path3 .block-right span img {
+        width: 60%;
+        height: 1px;
+    }
+    .block-left, 
+    .block-right,
+    .block-left p, 
+    .block-right p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /*End The Process */
+    /*The Commercials */
+    .video-col video {
+        width: 95%;
+        height: 95%;
+    }
+    /*End The Commercials */
+    /*Map and Lets get it on */
+    .content-block-path7 .content-width {
+        padding: 0;
+    } 
+    .content-block-path7 .right-part-1 {
+        padding-left: 20px;
+        padding-top: 50px;
+    }
+    /*End Map and Lets get it on */
+    
+}
+@media (max-width: 991px)/*991-767*/ {
+    /*Body*/
+    body {
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .retreat-left-right {
+        padding-left: 20px;
+        padding-right: 20px
+    }
+    .retreat-top-bottom {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .main-heading {
+        font-size: 50px;
+        line-height: 55px;
+    }
+    .paragraph-italic {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    /*End Body*/
+    /*The Process */
+    .block-left img,
+    .block-right img {
+        width: 30%;
+        height: 30%;
+    }
+    .block-left .number,
+    .block-right .number {
+        font-size: 60px;
+        line-height: 73px;
+    }
+    .block-left .title,
+    .block-right .title {
+        font-size: 45px;
+        line-height: 73px;
+    }
+    .block-left .path3-header {
+        text-align: left;
+        padding-left: 210px;
+        padding-top: 11px;
+    }
+    .block-left p {
+        padding: 27px 0px 0 230px;
+        margin: 0;
+        text-align: left;
+    }
+    .block-right .path3-header {
+        text-align: right;
+        padding-right: 210px;
+        padding-top: 11px;
+    }
+    .block-right p {
+        padding: 27px 230px 0 0px;
+        margin: 0;
+        text-align: left;
+    }
+    /*End The Process */
+    /*Map and Lets get it on */
+    .content-block-path7 .right-part-1 a {
+        font-size: 45px;
+    }
+    /*End Map and Lets get it on */
+}
+@media (max-width: 767px) /*767-720*/ {
+    /*Body*/
+    body {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .main-heading {
+        font-size: 45px;
+        line-height: 55px;
+    }
+    .paragraph-italic {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    /*End Body*/
+    /*Navigation*/
+    .navigation-container .right-part p {
+        line-height: 25px;
+        font-size: 15px;
+    }
+    .navigation-container .left-part,
+    .navigation-container .right-part {
+        float: none;
+    }
+    .navigation-container .right-part {
+        display: none;
+    }
+    .navbar-default .navbar-toggle {
+        border: 2px solid rgb(11, 59, 83);
+    }
+    .navbar-default .navbar-toggle:hover {
+        background-color: white;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: rgb(255, 150, 0);
+    }
+    .navbar-toggle {
+        margin-right: 0;
+    }
+    .navbar-collapse {
+        width: 100%;
+    }
+    .left-part .navbar-nav li a {
+        padding-right: 0;
+        padding-left: 0;
+    }
+        /*End Navigation*/
+    
+    /*The Process*/
+    .block-left,
+    .block-right {
+        overflow: hidden;
+        padding: 10px 0;
+    }
+    .block-left img, 
+    .block-right img {
+        float:left;
+        width: 25%;
+        height: 25%;
+    }
+    .block-left .number, 
+    .block-right .number {
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .block-left .title, 
+    .block-right .title {
+        font-size: 38px;
+        line-height: 50px;
+    }
+    .block-left .path3-header, 
+    .block-right .path3-header {
+        text-align: left;
+        padding: 0;
+        padding-left: 26%;
+    }
+    .block-left span img,
+    .block-right span img {
+        display: none;
+    }
+    .block-left p,
+    .block-right p  {
+        padding: 0 0 0 26%;
+        margin: 0;
+        text-align: left;
+    }
+    /*End The Process*/
+    /*The Call Tracking Platform */
+    .button .btn-warning {
+        width: auto;
+        padding: 0 5px;
+        font-size: 18px;
+        line-height: 76px;
+    }
+    /*End The Call Tracking Platform */
+    /*Map and Lets get it on */
+    .content-block-path7 .right-part-1 {
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
+    .content-block-path7 .right-part-1 a {
+        font-size: 40px;
+    }
+    .content-block-path7 .right-part-1 .address {
+        font-size: 20px;
+    }
+    /*End Map and Lets get it on */
+}
+@media (max-width: 734px) /*734-720*/ {
+    /*Header*/
+    .header .header-left-part img:nth-child(2) {
+        display: none;
+    }
+    .tel a {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .mail a {
+        padding: 0;
+        font-size: 14px;
+        line-height: 10px;
+    }
+    .header-left-part img {
+        width: 50%;
+        margin-right: 0;
+    }
+    .header-left-part {
+        float: none;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .header-center-part {
+        float: left;
+    }
+    .header-right-part {
+        float: right;
+    }
+    /*End Header*/
+}
+@media (max-width: 720px) /*720-680*/ {
+    /*Body*/
+    body {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .retreat-left-right {
+        padding-left: 15px;
+        padding-right: 15px
+    }
+    .retreat-top-bottom {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .main-heading {
+        font-size: 40px;
+        line-height: 55px;
+    }
+    .paragraph-italic {
+    font-size: 16px;
+    line-height: 25px;
+    }
+    /*End Body*/
+    /*The Process*/
+    .block-left .number, 
+    .block-right .number {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .block-left .title, 
+    .block-right .title {
+        font-size: 33px;
+        line-height: 50px;
+    }
+    /*End The Process*/
+}
+@media (max-width: 680px) /*680-580*/  {
+    /*Body*/
+    body {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .main-heading {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .paragraph-italic {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    /*End Body*/
+    /*Header*/
+    .header .header-left-part img {
+        padding-top: 13px;
+    }
+    .navigation-container .right-part p {
+        text-align: center;
+        font-size: 13px;    
+    }
+    /*End Header*/
+    /*The Call Tracking Platform */
+    .button .btn-warning {
+        width: 50%;
+        height: 50%;
+        padding: 0 5px;
+        font-size: 13px;
+        line-height: 50px;
+    }
+    /*End The Call Tracking Platform */
+}
+@media (max-width: 580px) /*580-500*/ {
+    /*Body*/
+    .retreat-left-right {
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    .retreat-top-bottom {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    /*End Body*/
+    /*Navigation*/
+     .navigation-container .right-part p {
+        font-size: 12px;    
+    }
+    /*End Navigation*/
+    /*The Call Tracking Platform */
+    .break {
+        display: block;
+        height: 1px;
+    }
+    .button .btn-warning {
+        width: 50%;
+        height: 20%;
+        padding: 5px;
+        font-size: 12px;
+        line-height: 15px;
+     }
+    /*End The Call Tracking Platform */
+}
+@media (max-width: 520px) {
+    /*Navigation*/
+    .navigation-container .right-part p {
+        font-size: 12px;
+     }
+    /*End Navigation*/
+}
+@media (max-width: 500px) {
+    /*Body*/
+    .main-heading {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    /*End Body*/
+    /*Navigation*/
+    .navigation-container .right-part p {
+        text-align: center;
+        font-size: 9px;    
+    }
+    /*End Navigation*/
+    /*The Process*/
+    .block-left .number, 
+    .block-right .number {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .block-left .title, 
+    .block-right .title {
+        font-size: 28px;
+        line-height: 33px;
+    }
+    /*End The Process*/
+    /*The Commercials */
+    .content-block-path6 .container-video .video-col.col-lg-4.col-md-4.col-sm-6.col-xs-6 {
+        width: 100%;
+    }
+    /*End The Commercials */
+    /*Map and Lets get it on */
+    .content-block-path7 .right-part-1 {
+        padding: 10px;
+    }
+    .content-block-path7 .right-part-1 .address {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .content-block-path7 .right-part-1 a {
+        font-size: 30px;
+    }
+    /*End Map and Lets get it on */
+}
+@media (max-width: 400px) {
+    /*Header*/
+    .header-center-part,
+    .header-right-part {
+        float: none;
+        text-align: center;
+    }
+    /*End Header*/
+    /*Navigation*/
+    .navigation-container .right-part p {
+        text-align: center;
+        font-size: 8px;    
+    }
+    /*End Navigation*/
+}
